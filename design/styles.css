@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Colours */
+:root {
+  /* Primary Colours */
+  --Pale--Blue: hsl(225, 100%, 94%);
+  --Bright--Blue: hsl(245, 75%, 52%);
+
+  --Ver--pale--blue: hsl(225, 100%, 98%);
+  --Desaturated--blue: hsl(224, 23%, 55%);
+  --Dark--blue: hsl(223, 47%, 23%);
+}
+
+/* Body */
+
+body .card-container {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+/* Card */
+
+.card {
+  width: 375px;
+  min-height: 550px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px -3px var(--Desaturated--blue);
+}
+
+/* Responsive Card */
+@media screen and (max-width: 375px) {
+  body .card-container {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    width: 340px;
+    min-width: 320px;
+  }
+}
+
+.card > .card-image > img {
+  width: 100%;
+  min-height: 180px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.order-summary {
+  display: block;
+  text-align: center;
+  color: var(--Dark--blue);
+  padding: 2rem 2rem 1rem 2rem;
+  font-weight: 900;
+}
+
+.card p {
+  display: block;
+  text-align: center;
+  padding: 0rem 0.8rem 2rem 0.8rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--Desaturated--blue);
+}
+
+.card .music {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem 2rem 2rem;
+  width: 100%;
+}
+
+.music img {
+  display: block;
+  width: 50px;
+}
+
+.music .annual {
+  color: var(--Desaturated--blue);
+  align-items: left;
+  margin-left: -4rem;
+  line-height: 1.7;
+}
+
+.music .annual span {
+  color: var(--Dark--blue);
+  font-weight: 700;
+}
+
+.music .change {
+  transition: all 300ms;
+}
+
+.music .change:hover {
+  text-decoration: none;
+  color: var(--Desaturated--blue);
+}
+.card .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons .btn {
+  display: block;
+  width: 80%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-weight: 900;
+  transition: all 300ms;
+}
+
+.payment {
+  margin-bottom: 1rem;
+  background-color: var(--Bright--Blue);
+  color: white;
+  box-shadow: 0px 8px 5px -3px var(--Desaturated--blue);
+}
+
+.payment:hover {
+  background-color: var(--Desaturated--blue);
+}
+
+.cancel {
+  color: var(--Desaturated--blue);
+}
+
+.cancel:hover {
+  color: var(--Bright--Blue);
+}
