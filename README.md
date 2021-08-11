@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://order-summary-component-main-alenaycgit.netlify.app/)
+- Solution URL: [Here](https://order-summary-component-main-alenaycgit.netlify.app/)
 
 ## My process
 
